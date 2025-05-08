@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Task71P</string>
+    <string name="home_title">Lost &amp; Found (Australia)</string>
+    <string name="btnNewAd">CREATE A NEW ADVERT</string>
+    <string name="btnShowAll">SHOW ALL LOST &amp; FOUND ITEMS</string>
+    <string name="allView">LOST &amp; FOUND ITEMS</string>
+    <string name="radioLost">Lost</string>
+    <string name="radioFound">Found</string>
+    <string name="radioCaption">Post type:</string>
+    <string name="hintName">Name:</string>
+    <string name="hintPhone">Phone:</string>
+    <string name="hintDesc">Description:</string>
+    <string name="hintDate">Date:</string>
+    <string name="hintLocation">Location:</string>
+    <string name="saveButton">SAVE</string>
+    <string name="defaultLogDate">JAN 01 2025</string>
+    <string name="deleteButton">REMOVE</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5DA063"
+    tools:context=".DeleteItemActivity">
+
+    <TextView
+        android:id="@+id/tvTypeName"
+        android:layout_width="412dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTimeSince"
+        android:layout_width="412dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTypeName" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="412dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimeSince" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="372dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/deleteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

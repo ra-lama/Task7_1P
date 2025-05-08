@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:foregroundTint="@color/white"
+    tools:context=".NewItemActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGrpType"
+        android:layout_width="414dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/radioCaption"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbLost"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="@string/radioLost" />
+
+        <RadioButton
+            android:id="@+id/rbFound"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:text="@string/radioFound" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvLabelName"
+        android:layout_width="410dp"
+        android:layout_height="51dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center_vertical"
+        android:labelFor="@id/etName"
+        android:padding="5dp"
+        android:text="@string/hintName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGrpType" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="411dp"
+        android:layout_height="51dp"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="@string/hintName"
+        android:inputType="text"
+        android:lineSpacingExtra="8sp"
+        android:maxLength="50"
+        android:padding="5dp"
+        android:singleLine="false"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelName" />
+
+    <TextView
+        android:id="@+id/tvLabelPhone"
+        android:layout_width="411dp"
+        android:layout_height="52dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="@string/hintPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etName" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="411dp"
+        android:layout_height="51dp"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="@string/hintPhone"
+        android:inputType="phone"
+        android:lineSpacingExtra="8sp"
+        android:maxLength="10"
+        android:padding="5dp"
+        android:singleLine="false"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelPhone" />
+
+    <TextView
+        android:id="@+id/tvLabelDesc"
+        android:layout_width="411dp"
+        android:layout_height="52dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="@string/hintDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPhone" />
+
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_width="411dp"
+        android:layout_height="51dp"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:hint="@string/hintDesc"
+        android:inputType="text"
+        android:lineSpacingExtra="8sp"
+        android:maxLength="100"
+        android:maxLines="3"
+        android:padding="5dp"
+        android:singleLine="false"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelDesc" />
+
+    <TextView
+        android:id="@+id/tvLabelDate"
+        android:layout_width="407dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="@string/hintDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etDesc" />
+
+    <Button
+        android:id="@+id/bLog"
+        style="?android:spinnerStyle"
+        android:layout_width="423dp"
+        android:layout_height="50dp"
+        android:onClick="openDatePicker"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelDate"
+        app:strokeColor="@color/black"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/tvLabelLoc"
+        android:layout_width="411dp"
+        android:layout_height="51dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="3dp"
+        android:padding="5dp"
+        android:text="@string/hintLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bLog" />
+
+    <EditText
+        android:id="@+id/etLoc"
+        android:layout_width="411dp"
+        android:layout_height="51dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/hintLocation"
+        android:inputType="text"
+        android:lineSpacingExtra="8sp"
+        android:padding="5dp"
+        android:singleLine="false"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelLoc" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLoc" />
+
+    <TextView
+        android:id="@+id/tvErr"
+        android:layout_width="411dp"
+        android:layout_height="52dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#F44336"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSave" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
